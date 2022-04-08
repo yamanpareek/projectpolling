@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>poll</title>
+</head>
+<style>
+  body{
+    background-color: gray;
+  }
+  .wrapper {
+    background: #b3cccc;
+    border-radius: 15px;
+    padding: 25px;
+    max-width: 380px;
+    width: 100%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 32%;
+    margin-top: 10%;
+    align-content: center;
+    padding: 50px;
+  }
+  
+.opt {
+  padding-left: 70px;
+  padding-block:15px ;
+  border: #932488;
+}
+
+#title{
+  padding-left: 70px;
+}
+#btn{
+  padding-block:15px ;
+}
+#btn button{
+  width: 150px;
+  border-bottom: solid rgb(73, 61, 187);
+  border-right: solid rgb(73, 61, 187);
+  padding: 10px;
+  border-radius: 10px;
+  border-width: 5px;
+  margin-left: 20px;
+}
+</style>
+
+<body>
+  <!--
+  <form action="/poll_result">
+    <div class="wrapper">
+      <input type="text" size=40 value="{{ poll_title }}" name="poll_title" hidden>
+      <input type="text" name="email" value="{{ email }}" hidden>
+      <div id="title">
+        <label>{{ poll_title }}</label>
+      </div>
+      <div id="opt">
+        <input type="radio" size=30 id="opt1" name="option" value="{{ opt1 }}" />
+        <lable for="opt1">{{ opt1 }}</lable><br/>
+        <input type="radio" size=30 id="opt2" name="option" value="{{ opt2 }}" />
+        <lable for="opt2">{{ opt2 }}</lable><br/>
+        <input type="radio" size=30 id="opt3" name="option" value="{{ opt3 }}" />
+        <lable for="opt3">{{ opt3 }}</lable><br/>
+        <input type="radio" size=30 id="opt4" name="option" value="{{ opt4 }}" />
+        <lable for="opt4">{{ opt4 }}</lable><br/>
+        <div id="btn">
+        <button>Submit</button>
+        <input type="text" name="email" value="{{ email }}" hidden>
+        </div>
+      </div>
+    </div>
+
+  </form> -->
+  <!-- <script src="script.js"></script> -->
+  <form action="/poll_result">
+    <div class="wrapper">
+      <input type="text" size=40 value="{{ poll_title }}" name="poll_title" hidden>
+      <input type="text" name="email" value="{{ email }}" hidden>
+      <div id="title">
+        <label>{{ poll_title }}</label>
+      </div>
+      <div class="opt">
+        <input type="radio" size=30 id="opt1" name="option" value="op1_value" />
+        <lable for="opt1">{{ opt1 }}</lable><br/>
+        <input type="radio" size=30 id="opt2" name="option" value="op2_value" />
+        <lable for="opt2">{{ opt2 }}</lable><br/>
+        <input type="radio" size=30 id="opt3" name="option" value="op3_value" />
+        <lable for="opt3">{{ opt3 }}</lable><br/>
+        <input type="radio" size=30 id="opt4" name="option" value="op4_value" />
+        <lable for="opt4">{{ opt4 }}</lable><br/>
+        <div id="btn">
+        <button>Submit</button>
+        <input type="text" name="email" value="{{ email }}" hidden>
+        </div>
+      </div>
+    </div>
+
+  </form>
+</body>
+
+</html>

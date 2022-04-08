@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    div{
+        margin-left: 33%;
+        margin-top: 10%;
+    }
+    body div table{
+    border:2;
+    }
+    body{
+    background-color: gray;
+    }
+
+    </style>
+</head>
+<body>
+<div>
+    {% for item in data %}
+    <table border="2" cellpadding="10px" cellspacing="10px" width="500px">
+        <tr align-item="center">
+            <th>
+                {{ item.2 }}
+            </th>
+        </tr>
+        <tr>
+            <td>
+                {{ item.3 }}
+            </td>
+            <td>
+                {{ item.4 }}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                {{ item.5 }}
+            </td>
+            <td>
+                {{ item.6 }}
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                {{ item.7 }}
+            </td>
+            <td>
+                {{ item.8 }}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                {{ item.9 }}
+            </td>
+            <td>
+                {{ item.10 }}
+            </td>
+        </tr>
+    </table>
+    {% endfor %}
+</div>
+</body>
+</html>

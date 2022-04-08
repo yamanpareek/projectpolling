@@ -76,11 +76,11 @@ WSGI_APPLICATION = 'pollingproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME':  'pollingproject',
+        'NAME': 'pollingproject',
         'USER': 'root',
-        'PASSWORD': 'Y@24july',
+        'PASSWORD': '@Vasu001',
         'HOST': '127.0.0.1',
-        'PORT': '3306',
+        'PORT': '3306'
     }
 }
    # 'NAME': BASE_DIR / 'db.mysql',
