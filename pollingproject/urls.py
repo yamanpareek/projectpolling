@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from polling.views import signuppage, loginpage, firstpage , page , loginpage_d
+from polling.views import signuppage, loginpage, firstpage , page , loginpage_d, Emailverification, ResetPassword, changepassword
 
 
 urlpatterns = [
@@ -25,5 +25,8 @@ urlpatterns = [
     path('signuppage', signuppage),
     path('signuppage_data', page),
     path('loginpage_data', loginpage_d),
+    path('Emailverification', Emailverification),
+    path('ResetPassword', ResetPassword),
+    path('changepassword', changepassword),
 
 ]
